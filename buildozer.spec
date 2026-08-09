@@ -36,7 +36,7 @@ requirements = python3,kivy,requests,urllib3
 fullscreen = 0
 
 # (list) Permissions
-#android.permissions = INTERNET
+android.permissions = INTERNET
 
 # (int) Target Android API, should be as high as possible.
 android.api = 33
