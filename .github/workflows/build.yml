@@ -31,6 +31,10 @@ jobs:
           pip install buildozer cython==0.29.33
 
       - name: Build APK with Buildozer
+        env:
+          # Bỏ qua lỗi implicit declaration trong Clang / GCC của Android NDK
+          CFLAGS: "-Wno-implicit-function-declaration -Wno-int-conversion"
+          APP_ANDROID_ARCHS: "arm64-v8a"
         run: |
           unset ANDROID_NDK_HOME ANDROID_NDK_ROOT ANDROID_NDK
           yes | buildozer -v android debug
