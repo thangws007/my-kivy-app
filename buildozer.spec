@@ -21,6 +21,7 @@ version = 0.1
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy,requests,urllib3
+p4a.branch = release-2024.01.21
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirement with recipes
